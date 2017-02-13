@@ -1,0 +1,27 @@
+{
+  "name": "api-security",
+  "version": "1.0.0",
+  "description": "Express middleware that adds default security headers",
+  "main": "index.js",
+  "directories": {
+    "tests": "tests"
+  },
+  "scripts": {
+    "test": "mocha -R nyan tests"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "security"
+  ],
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "helmet": "^2.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "supertest": "^2.0.1"
+  }
+}
