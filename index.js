@@ -12,10 +12,10 @@ function add(app, args) {
   // helmet configs
   app.use(helmet());
 
+  const bpArgs = args || { limit : '100kb' };
+
   // body parser
-  app.use(bodyParser.json({
-    limit : '100kb'
-  }));
+  app.use(bodyParser.json(bpArgs));
 
   app.use(bodyParser.urlencoded({
     extended: true
