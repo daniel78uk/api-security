@@ -7,7 +7,9 @@
     "tests": "tests"
   },
   "scripts": {
-    "test": "mocha -R nyan tests"
+    "test": "mocha -R nyan tests",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "express",
@@ -17,12 +19,14 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",
-    "helmet": "^2.3.0"
+    "helmet": "^2.3.0",
+    "snyk": "^1.41.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "express": "^4.14.0",
     "mocha": "^3.2.0",
     "supertest": "^2.0.1"
-  }
+  },
+  "snyk": true
 }
